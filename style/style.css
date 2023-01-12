@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content:end;
+    align-items:center;
+}
+header{
+    height: 150px;
+    /* background-color: aquamarine; */
+    padding-top: 50px;
+    padding-right: 210px;
+  
+}
+.veganprod:hover{
+    background-color: #79B331;
+    color: #ffffff;
+    cursor: pointer;
+}
+.veganprod{
+    width: 230px;
+    height: 70px;
+    background-color: #C4C4C4;
+    border-radius: 0px 35px;
+   
+    margin-right: 85px;
+    
+}
+.veganprod a{
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+    display:block ;
+}
+.veganprod a:hover{
+    color: #ffffff;
+}
+
+
+
+.magaz{
+    width: 125px;
+}
+.shop{
+   width: 70px;
+}
+body{
+    background-image: url(../img/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.mart{
+    width: 450px;
+    height: 200px;
+    margin-left: 50%;
+    margin-top: 95px;
+}
+.wre{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #79B331;
+    position: relative;
+    animation: brunva 4s infinite;
+}
+@keyframes brunva {
+    0%{top:0 ;  left:0 ;}
+    25%{top:0 ;  left:420px;}
+    50%{top:170px ;  left:420px;}
+    75%{top:170px; left:0px ;}
+    100%{top:0 ;  left:0 ;}
+}
+.text{
+    text-align: center;
+    margin-top: 25px;
+}
+.aqcia{
+    font-size: 18px;
+}
+
+.dro{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+}
+.xe{
+    width: 1066px;
+    height: 400px;
+    margin: 100px auto;
+   margin-top: 300px;
+   margin-left: 400px;
+    position: relative;
+}
+.gero{
+    width: 1px;
+    height: 400px;
+    background-color: #C4C4C4;
+    margin: 0 auto;
+}
+.toti{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    /* background-color: aqua; */
+}
+.fotoli{
+    width: 70px;
+    height: 70px;
+    border-radius: 0 35px 0 35px;
+    background-color: #C4C4C4;
+}
+.toti p{
+    width: 80%;
+    font-size: 18px;
+}
+.meore{
+    top:30px;
+    left: 50%;
+}
+.mesame{
+    top:130px;
+}
+.meotxe{
+    top:230px;
+    left: 50%;
+}
+.right{
+    transform: rotate(90deg);
+}
+@media only screen and (max-width: 1024px) {
+    .xe{
+        width: 100%;
+        margin-top: 0px;
+   margin-left: 0px;
+    }
+    .right{
+        transform: rotate(0deg);
+    }
+    .meore, .meotxe{
+        flex-direction: row-reverse;
+    }
+    .toti{
+        width: 99%
+    }
+    .meore, .meotxe{
+        left: 0;
+    }
+    .gero{
+        margin-left: 99%;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .nav ul li{
+        display: none;
+    }
+    .veganprod{
+       display: none;
+    }
+    .mart{
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+    }
+    .wre{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #79B331;
+        position: relative;
+        animation: brunva 4s infinite;
+    }
+    @keyframes brunva {
+        0%{top:0 ;  left:0 ;}
+        25%{top:0 ;  left:300px;}
+        50%{top:150px ;  left:300px;}
+        75%{top:150px; left:0px ;}
+        100%{top:0 ;  left:0 ;}
+    }
+    .text{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .aqcia{
+        font-size: 16px;
+    }
+    
+    .dro{
+        font-size: 24px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .gero{
+        display: none;
+    }
+    .xe{
+        width: 380px;
+    }
+    .toti{
+        flex-direction: column;
+    }
+    .meore{
+        top: 100px;
+    }
+    .mesame{
+        top:300px;
+    }
+    .meotxe{
+        top:500px;
+    }
+    .pirvei, .mesame{
+        flex-direction: column-reverse;
+    }
+    .toti p{
+        text-align: center;
+    }
+
+
+}
